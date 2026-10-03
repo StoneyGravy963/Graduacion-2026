@@ -1,0 +1,7 @@
+# Contexto privado para Claude Code, no se publica
+CLAUDE.md
+.claude/
+
+# Basura del sistema
+Thumbs.db
+.DS_Store
