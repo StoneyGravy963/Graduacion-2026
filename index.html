@@ -6,6 +6,21 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Graduación Sistemas Computacionales Gen. 2026</title>
 <meta name="description" content="Toda la información de la graduación de Ingeniería en Sistemas Computacionales, generación 2026, UAA: fechas, pagos, menú, programa, padrinos y cómo participar.">
+<meta name="theme-color" content="#0F3D33">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F3D33'/%3E%3Cpolygon points='32,13 58,25 32,37 6,25' fill='%23D9AE4F'/%3E%3Cpath d='M17 33v9c0 6 30 6 30 0v-9l-15 7z' fill='%23D9AE4F' fill-opacity='.85'/%3E%3Cpath d='M54 27v15' stroke='%23D9AE4F' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='54' cy='46' r='3' fill='%23D9AE4F'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Graduación Sistemas Computacionales Gen. 2026">
+<meta property="og:title" content="Graduación Sistemas Computacionales Gen. 2026">
+<meta property="og:description" content="Sábado 19 de diciembre de 2026. Fechas, pagos, menú, programa, padrinos y cómo participar.">
+<meta property="og:url" content="https://stoneygravy963.github.io/Graduacion-2026/">
+<meta property="og:image" content="https://stoneygravy963.github.io/Graduacion-2026/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Graduación Sistemas Computacionales, generación 2026. Sábado 19 de diciembre de 2026, 8:00 p. m.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -70,7 +85,7 @@ ul{ margin:0; padding:0; list-style:none; }
 /* Hero */
 .hero{ background:var(--brand); color:var(--on-brand); padding:clamp(40px,8vw,88px) 0 clamp(44px,8vw,80px); }
 .hero-grid{ display:grid; gap:40px; align-items:end; }
-.hero h1{ font-size:clamp(3rem,11vw,6.2rem); text-wrap:balance; }
+.hero h1{ font-size:clamp(2.6rem,13vw,6.2rem); text-wrap:balance; }
 .hero-sub{ font-size:1.15rem; margin:18px 0 6px; opacity:.92; }
 .hero-date{ font-family:var(--font-display); font-weight:600; font-size:1.7rem; margin:0 0 28px; color:var(--accent); }
 .flap{ background:var(--board); border-radius:var(--r-m); padding:20px 20px 18px; border:1px solid var(--board-line); }
@@ -88,6 +103,7 @@ ul{ margin:0; padding:0; list-style:none; }
 .flap-done{ font-family:var(--font-display); font-size:2rem; color:var(--board-ink); margin:0; }
 @media (min-width:860px){
   .hero-grid{ grid-template-columns:1.25fr .9fr; gap:56px; }
+  .hero h1{ font-size:clamp(3.4rem,7vw,5.5rem); }
 }
 
 /* Nav */
@@ -112,21 +128,22 @@ h3{ font-size:1.6rem; }
 
 /* Pizarra de fechas */
 .board{ background:var(--board); color:var(--board-ink); border-radius:var(--r-m); overflow:hidden; border:1px solid var(--board-line); }
-.row{ display:grid; grid-template-columns:76px 1fr; gap:4px 16px; padding:18px 20px; border-top:1px solid var(--board-line); align-items:start; }
+.row{ display:grid; grid-template-columns:auto 1fr; gap:10px 18px; padding:18px 20px; border-top:1px solid var(--board-line); align-items:center; }
 .row:first-child{ border-top:0; }
-.when b{ display:block; font-family:var(--font-display); font-weight:700; font-size:2.3rem; line-height:.95; }
+.when b{ display:block; font-family:var(--font-display); font-weight:700; font-size:2.3rem; line-height:.95; white-space:nowrap; }
 .when span{ display:block; font-family:var(--font-display); font-size:1.05rem; color:var(--board-dim); }
+.what{ grid-column:1 / -1; }
 .what strong{ display:block; font-family:var(--font-display); font-weight:600; font-size:1.5rem; line-height:1.1; }
 .what span{ display:block; color:var(--board-dim); font-size:.98rem; margin-top:2px; }
-.time{ grid-column:2; font-family:var(--font-display); font-weight:600; font-size:1.25rem; color:var(--accent); }
-.state{ grid-column:2; justify-self:start; font-family:var(--font-display); font-weight:600; font-size:1.05rem; padding:2px 10px; border-radius:99px; border:1.5px solid currentColor; }
+.time{ font-family:var(--font-display); font-weight:600; font-size:1.25rem; color:var(--accent); }
+.state{ grid-column:1 / -1; justify-self:start; font-family:var(--font-display); font-weight:600; font-size:1.05rem; padding:2px 10px; border-radius:99px; border:1.5px solid currentColor; }
 .state.ok{ color:#86D9B3; }
 .state.warn{ color:#F2C660; }
 .state.hot{ color:#FF9A90; }
 @media (min-width:760px){
-  .row{ grid-template-columns:90px 130px 1fr auto; align-items:center; gap:16px 24px; padding:20px 28px; }
-  .time{ grid-column:auto; }
-  .state{ grid-column:auto; justify-self:end; }
+  .row{ grid-template-columns:90px 190px 1fr auto; gap:16px 24px; padding:20px 28px; }
+  .what, .state{ grid-column:auto; }
+  .state{ justify-self:end; }
 }
 .tip{ margin-top:16px; color:var(--muted); font-size:.98rem; }
 
@@ -260,7 +277,7 @@ footer p{ margin:0; max-width:none; }
       <a class="btn btn-accent" href="#fechas">Ver fechas importantes</a>
     </div>
     <div class="flap" role="timer" aria-label="Cuenta regresiva para la graduación">
-      <p class="flap-cap" id="flapCap">Faltan para el arranque de la noche (8:00 p. m.)</p>
+      <p class="flap-cap" id="flapCap">Faltan para el arranque de la noche (8:00&nbsp;p.&nbsp;m.)</p>
       <div class="tiles" id="tiles">
         <div class="tile" style="--i:0"><span class="num" id="cD">--</span><span class="lab">días</span></div>
         <div class="tile" style="--i:1"><span class="num" id="cH">--</span><span class="lab">horas</span></div>
@@ -299,28 +316,28 @@ footer p{ margin:0; max-width:none; }
     <div class="board" role="table" aria-label="Calendario de fechas importantes">
       <div class="row" role="row">
         <div class="when" role="cell"><b>7 nov</b><span>sábado</span></div>
-        <div class="time" role="cell">3:00 a 8:00 p. m.</div>
+        <div class="time" role="cell">3:00 a 8:00&nbsp;p.&nbsp;m.</div>
         <div class="what" role="cell"><strong>Pre-graduación</strong><span>Solo graduados. La Providencia Eventos, Jesús María</span></div>
       </div>
       <div class="row" role="row">
         <div class="when" role="cell"><b>19 nov</b><span>jueves</span></div>
-        <div class="time" role="cell">Antes de las 5:30 p. m.</div>
+        <div class="time" role="cell">Antes de las 5:30&nbsp;p.&nbsp;m.</div>
         <div class="what" role="cell"><strong>Fecha límite para pagar tu boleto completo</strong><span>En la oficina de Duque Eventos</span></div>
         <div class="state hot" role="cell">Importante</div>
       </div>
       <div class="row" role="row">
         <div class="when" role="cell"><b>19 dic</b><span>sábado</span></div>
-        <div class="time" role="cell">6:00 p. m.</div>
+        <div class="time" role="cell">6:00&nbsp;p.&nbsp;m.</div>
         <div class="what" role="cell"><strong>Misa de graduación</strong><span>Templo del Señor del Encino, Barrio del Encino</span></div>
       </div>
       <div class="row" role="row">
         <div class="when" role="cell"><b>19 dic</b><span>sábado</span></div>
-        <div class="time" role="cell">8:00 p. m.</div>
+        <div class="time" role="cell">8:00&nbsp;p.&nbsp;m.</div>
         <div class="what" role="cell"><strong>Cena de gala y fiesta</strong><span>Taller de Locomotoras, Tres Centurias</span></div>
       </div>
       <div class="row" role="row">
         <div class="when" role="cell"><b>20 dic</b><span>domingo</span></div>
-        <div class="time" role="cell">4:00 a. m.</div>
+        <div class="time" role="cell">4:00&nbsp;a.&nbsp;m.</div>
         <div class="what" role="cell"><strong>Cierre del after</strong><span>En el mismo salón. El salón se contrató por 8 horas</span></div>
       </div>
     </div>
@@ -365,7 +382,7 @@ footer p{ margin:0; max-width:none; }
     </div>
     <div class="band">
       <dl class="facts">
-        <div><dt>Cuándo</dt><dd>Sábado 7 de noviembre de 2026, de 3:00 a 8:00 p. m. (5 horas)</dd></div>
+        <div><dt>Cuándo</dt><dd>Sábado 7 de noviembre de 2026, de 3:00 a 8:00&nbsp;p.&nbsp;m. (5 horas)</dd></div>
         <div><dt>Dónde</dt><dd>La Providencia Eventos, Av. Eugenio Garza Sada 919, Jesús María<br>
           <a class="btn btn-line mapbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=La+Providencia+eventos+Av.+Eugenio+Garza+Sada+919+Jes%C3%BAs+Mar%C3%ADa+Aguascalientes">Abrir en el mapa</a></dd></div>
         <div><dt>Quién va</dt><dd>Solo graduados</dd></div>
@@ -428,7 +445,7 @@ footer p{ margin:0; max-width:none; }
         <summary>Misa</summary>
         <div class="acc-body">
           <ul class="dots">
-            <li><strong>Hora:</strong> 6:00 p. m.</li>
+            <li><strong>Hora:</strong> 6:00&nbsp;p.&nbsp;m.</li>
             <li><strong>Lugar:</strong> Templo del Señor del Encino, Jardín del Encino s/n, Barrio del Encino</li>
             <li>Habrá un coordinador litúrgico que guiará la ceremonia.</li>
           </ul>
@@ -441,7 +458,7 @@ footer p{ margin:0; max-width:none; }
         <div class="acc-body">
           <ul class="dots">
             <li><strong>Lugar:</strong> Taller de Locomotoras, Servando Canales 116, Desarrollo Especial Talleres F.F.C.C. (dentro de Tres Centurias)</li>
-            <li><strong>Inicio:</strong> 8:00 p. m. El salón está contratado por 8 horas, que incluyen el after.</li>
+            <li><strong>Inicio:</strong> 8:00&nbsp;p.&nbsp;m. El salón está contratado por 8 horas, que incluyen el after.</li>
             <li>Hosts para recibirte y acomodarte.</li>
             <li>Recepción con coctelería (mojitos, gin, piña colada, mezcales, baby mango, tamarindo y más), túnel de entrada y back de fotos.</li>
             <li>Menú en tu mesa con código QR.</li>
@@ -569,7 +586,7 @@ footer p{ margin:0; max-width:none; }
         </div>
         <div>
           <h3>Cena de desvelados</h3>
-          <p>Burritos de guisado para aguantar hasta el cierre, a las 4:00 a. m.</p>
+          <p>Burritos de guisado para aguantar hasta el cierre, a las 4:00&nbsp;a.&nbsp;m.</p>
         </div>
       </div>
     </div>
@@ -638,7 +655,7 @@ footer p{ margin:0; max-width:none; }
         <div><dt>Fecha límite</dt><dd><strong>Jueves 19 de noviembre de 2026.</strong> Necesitamos tener todo pagado un mes antes del evento.</dd></div>
         <div><dt>Dónde</dt><dd>Duque Eventos, Av. Punta Campestre #132, Frac. La Punta Campestre, Los Pocitos, Aguascalientes<br>
           <a class="btn btn-line mapbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Av.+Punta+Campestre+132+La+Punta+Campestre+Aguascalientes">Abrir en el mapa</a></dd></div>
-        <div><dt>Horario de la oficina</dt><dd>Lunes a jueves, de 9:30 a. m. a 2:30 p. m. y de 3:30 a 5:30 p. m.</dd></div>
+        <div><dt>Horario de la oficina</dt><dd>Lunes a jueves, de 9:30&nbsp;a.&nbsp;m. a 2:30&nbsp;p.&nbsp;m. y de 3:30 a 5:30&nbsp;p.&nbsp;m.</dd></div>
         <div><dt>Al pagar</dt><dd>Avisa tus alergias o padecimientos y guarda tu comprobante.</dd></div>
       </dl>
       <div class="callout">
@@ -660,7 +677,7 @@ footer p{ margin:0; max-width:none; }
         <h3><i aria-hidden="true"></i>Decidido</h3>
         <ul>
           <li>Fecha y salón de la graduación</li>
-          <li>Misa en el Templo del Señor del Encino, a las 6:00 p. m.</li>
+          <li>Misa en el Templo del Señor del Encino, a las 6:00&nbsp;p.&nbsp;m.</li>
           <li>Pre-graduación el 7 de noviembre en La Providencia</li>
           <li>Menú de la cena y postres (sujeto a cambios)</li>
           <li>After en el mismo salón, con burritos de guisado</li>
@@ -722,7 +739,7 @@ footer p{ margin:0; max-width:none; }
       </details>
       <details>
         <summary>¿A qué hora termina todo?</summary>
-        <div class="acc-body"><p>La fiesta empieza a las 8:00 p. m. y el salón está contratado por 8 horas, así que el after cierra a las 4:00 a. m.</p></div>
+        <div class="acc-body"><p>La fiesta empieza a las 8:00&nbsp;p.&nbsp;m. y el salón está contratado por 8 horas, así que el after cierra a las 4:00&nbsp;a.&nbsp;m.</p></div>
       </details>
       <details>
         <summary>¿Puedo ir a la pre-graduación con invitados?</summary>
@@ -757,7 +774,7 @@ footer p{ margin:0; max-width:none; }
 
 <script>
 (function(){
-  /* Cuenta regresiva: sábado 19 de diciembre de 2026, 8:00 p. m. (hora de Aguascalientes, UTC-6) */
+  /* Cuenta regresiva: sábado 19 de diciembre de 2026, 8:00&nbsp;p.&nbsp;m. (hora de Aguascalientes, UTC-6) */
   var target = new Date("2026-12-19T20:00:00-06:00").getTime();
   var cD = document.getElementById("cD"), cH = document.getElementById("cH"), cM = document.getElementById("cM"), cS = document.getElementById("cS");
   var tiles = document.getElementById("tiles"), cap = document.getElementById("flapCap"), done = document.getElementById("flapDone");
